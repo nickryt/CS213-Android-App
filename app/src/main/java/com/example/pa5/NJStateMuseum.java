@@ -1,8 +1,9 @@
 package com.example.pa5;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -10,8 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class NJStateMuseum extends AppCompatActivity {
 
-    private ImageView MuseumPicture;
+    private ImageButton MuseumPicture;
     private TextView name;
+    private ImageButton backButton;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,14 @@ public class NJStateMuseum extends AppCompatActivity {
         spinner.setAdapter(adapter);
         spinnerStudent.setAdapter(adapter);
         spinnerAdult.setAdapter(adapter);
+
+        backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 

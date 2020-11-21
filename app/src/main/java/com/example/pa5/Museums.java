@@ -52,10 +52,6 @@ public class Museums extends AppCompatActivity {
             }
         });
 
-
-
-
-
     }
 
 }

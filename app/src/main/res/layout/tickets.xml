@@ -10,14 +10,14 @@
     <LinearLayout
         android:id="@+id/topBarHBox"
         android:layout_width="match_parent"
-        android:layout_height="78dp"
+        android:layout_height="64dp"
         android:background="@color/light"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/backButton"
-            android:layout_width="96dp"
-            android:layout_height="70dp"
+            android:layout_width="74dp"
+            android:layout_height="64dp"
             android:layout_gravity="center_vertical"
             android:background="@android:color/transparent"
             android:contentDescription="@string/back_image_description"
@@ -26,7 +26,7 @@
             android:paddingEnd="10dp"
             android:paddingBottom="10dp"
             android:scaleType="fitCenter"
-            tools:srcCompat="@drawable/arrow" />
+            android:src="@drawable/arrow" />
 
         <TextView
             android:id="@+id/activity_title_tickets"
@@ -54,13 +54,13 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/museumImage"
-        android:layout_width="315dp"
-        android:layout_height="183dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
-        android:contentDescription="@string/museum_image_description"
+        android:layout_width="256dp"
+        android:layout_height="217dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/selectmuseum" />
 
     <LinearLayout
