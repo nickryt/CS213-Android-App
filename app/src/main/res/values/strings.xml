@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">PA5</string>
+
     <string name="museum_one">New Jersey State Museum</string>
     <string name="museum_two">The Newark Museum Of Art</string>
     <string name="museum_three">Montclair Art Museum</string>
     <string name="museum_four">Liberty Science Center</string>
+
+
 </resources>
