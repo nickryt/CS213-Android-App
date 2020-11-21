@@ -24,7 +24,27 @@
 
         <activity
             android:name=".Museums"
-            android:label="My Recipes">
+            android:label="Lists All Museums">
+        </activity>
+
+        <activity
+            android:name=".LibertyScienceCenter"
+            android:label="Liberty Science Center">
+        </activity>
+
+        <activity
+            android:name=".MontclairArtMuseum"
+            android:label="Montclair Art Museum">
+        </activity>
+
+        <activity
+            android:name=".NewarkMuseumOfArt"
+            android:label="Newark Museum Of Art">
+        </activity>
+
+        <activity
+            android:name=".NJStateMuseum"
+            android:label="NJ State Museum">
         </activity>
 
 
