@@ -15,6 +15,7 @@ public class NJStateMuseum extends AppCompatActivity {
     private int SENIOR_PRICE = 17;
     private int STUDENT_PRICE = 12;
     private int ADULT_PRICE = 25;
+    private double TAX_AMOUNT = 0.06625;
 
     private Button ticketPrices;
     private TextView ticketCost;
@@ -69,7 +70,7 @@ public class NJStateMuseum extends AppCompatActivity {
 
                 ticketCost.setText("$" + price);
 
-                Double tax = price * 0.06625;
+                Double tax = price * TAX_AMOUNT;
                 //ticketCost.setText("$" + String.format("%.2f", price));
                 taxCost.setText("$" + String.format("%.2f", tax));
                 totalCost.setText("$" + String.format("%.2f", price + tax));
