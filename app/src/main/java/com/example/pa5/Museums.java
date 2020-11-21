@@ -27,31 +27,28 @@ public class Museums extends AppCompatActivity {
         museumButtonOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("1");
-
                 startActivity(new Intent(Museums.this, NJStateMuseum.class));
-
             }
         });
 
         museumButtonTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("2");
+                startActivity(new Intent(Museums.this, NewarkMuseumOfArt.class));
             }
         });
 
         museumButtonThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("3");
+                startActivity(new Intent(Museums.this, MontclairArtMuseum.class));
             }
         });
 
         museumButtonFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("4");
+                startActivity(new Intent(Museums.this, LibertyScienceCenter.class));
             }
         });
 
