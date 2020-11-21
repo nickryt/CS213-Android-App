@@ -19,7 +19,7 @@
 
             <ImageButton
                 android:id="@+id/backButton"
-                android:layout_width="106dp"
+                android:layout_width="81dp"
                 android:layout_height="64dp"
                 android:layout_gravity="center_vertical"
                 android:background="@android:color/transparent"
@@ -55,7 +55,7 @@
             android:id="@+id/adultHBox"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <TextView
@@ -83,7 +83,7 @@
             android:id="@+id/seniorHBox"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <TextView
@@ -111,7 +111,7 @@
             android:id="@+id/studentHBox"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <TextView
@@ -136,9 +136,9 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button3"
-            android:layout_width="286dp"
-            android:layout_height="64dp"
+            android:id="@+id/calculateButton"
+            android:layout_width="349dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:background="@color/light"
             android:text="@string/calculate"
@@ -147,6 +147,49 @@
             android:textIsSelectable="false"
             android:textSize="25sp"
             android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/calculations"
+            android:layout_width="287dp"
+            android:layout_height="268dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/price"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/tax"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/total"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>
