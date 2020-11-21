@@ -9,17 +9,26 @@
     <string name="title_tickets">Ticket Price Calculator</string>
     <string name="image_description">Museum Image</string>
 
-    <string name="adult">Adult :</string>
-    <string name="senior">Senior :</string>
-    <string name="student">Student :</string>
+    <string name="adult">Adult ($25):</string>
+    <string name="senior">Senior ($17) :</string>
+    <string name="student">Student ($12) :</string>
 
     <string name="price">Ticket Price : </string>
     <string name="tax">Sales Tax : </string>
     <string name="total">Total : </string>
-    <string name="calculate">Calculate Ticket Prices : </string>
+    <string name="calculate">Calculate Ticket Prices</string>
 
     <string name="placeholder">PLACEHOLDER</string>
     <string name="placeholder_money">$0.00</string>
+
+    <string-array name="tickets_selected">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 
 
 </resources>
