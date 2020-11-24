@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="40dp"
             android:paddingBottom="20dp"
-            android:text="New Jersey Museum Tickets"
+            android:text="@string/main_page_title"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="45sp"
@@ -27,6 +27,7 @@
             android:layout_height="257dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
+            android:contentDescription="@string/logo_description"
             app:srcCompat="@drawable/selectmuseum" />
 
         <Button

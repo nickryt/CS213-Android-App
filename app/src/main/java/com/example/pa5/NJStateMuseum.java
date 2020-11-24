@@ -1,5 +1,6 @@
 package com.example.pa5;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -7,10 +8,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class NJStateMuseum extends AppCompatActivity {
-
 
     private int SENIOR_PRICE = 17;
     private int STUDENT_PRICE = 12;
@@ -26,12 +28,27 @@ public class NJStateMuseum extends AppCompatActivity {
     private TextView name;
     private ImageButton backButton;
 
+    private TextView seniorText;
+    private TextView studentText;
+    private TextView adultText;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tickets);
 
+        Toast.makeText(NJStateMuseum.this, "Maximum Of 5 Tickets For Each!", Toast.LENGTH_SHORT).show();
+
         MuseumPicture = findViewById(R.id.museumImage);
         MuseumPicture.setImageResource((R.drawable.new_jersey_state_museum));
+
+        MuseumPicture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), Website.class);
+                intent.putExtra("SELECTED", "NJSM");
+                startActivity(intent);
+            }
+        });
 
         name = findViewById(R.id.museumName);
         name.setText(getResources().getText(R.string.museum_one));
@@ -48,6 +65,14 @@ public class NJStateMuseum extends AppCompatActivity {
 
         ticketPrices = findViewById(R.id.calculateButton);
 
+        seniorText = findViewById(R.id.seniorText);
+        studentText = findViewById(R.id.studentText);
+        adultText = findViewById(R.id.adultText);
+
+        seniorText.setText(getResources().getText(R.string.NJSM_senior));
+        studentText.setText(getResources().getText(R.string.NJSM_student));
+        adultText.setText(getResources().getText(R.string.NJSM_adult));
+
         backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +88,6 @@ public class NJStateMuseum extends AppCompatActivity {
                 price += (STUDENT_PRICE * Integer.parseInt(spinnerStudent.getSelectedItem().toString()));
                 price += (ADULT_PRICE * Integer.parseInt(spinnerAdult.getSelectedItem().toString()));
 
-
                 ticketCost = findViewById(R.id.price_amount);
                 taxCost = findViewById(R.id.tax_amount);
                 totalCost = findViewById(R.id.total_amount);
@@ -74,7 +98,6 @@ public class NJStateMuseum extends AppCompatActivity {
                 //ticketCost.setText("$" + String.format("%.2f", price));
                 taxCost.setText("$" + String.format("%.2f", tax));
                 totalCost.setText("$" + String.format("%.2f", price + tax));
-
             }
         });
     }
