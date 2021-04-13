@@ -1,3 +1,8 @@
 # museumtickets
+Simple museum viewer android application. Project 5 for CS213 (Software Methodology) taught by Professor Lily Chang at Rutgers University.
 
-Simple museum viewer application as the final project for CS213 taught by Professor Lily Chang at Rutgers University.
+## What I Learned : 
+  - Android Studio and related technologies
+
+## Collaborators : 
+  - https://github.com/Chris-C99
